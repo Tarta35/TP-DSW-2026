@@ -17,12 +17,12 @@ Tambien se puede gestionar el estado de cada articulo, a su vez su ingreso y egr
 
 
 ### Modelo
-![Modelo de Dominio Gestion de Articulos (1)](https://github.com/user-attachments/assets/6f710bfd-533f-498b-b5ca-652ab0b83331)
+<img width="2682" height="1059" alt="Modelo de Dominio Gestion de nueva propuesta drawio (2)" src="https://github.com/user-attachments/assets/25177682-6ae6-4e6b-aa77-d9ec466eaa2e" />
 
 
 
 
-Link: https://drive.google.com/file/d/1rXyoW1wYY54ALXUtHZjh0R3I49D9dXWx/view?usp=sharing
+Link al drive, contiene la imagen y el modelo realizado en draw.io: https://drive.google.com/drive/folders/1elOoolKdCF_jXy4o09QsKXLZrdcb7qfM?usp=sharing
 
 ## Alcance Funcional 
 
@@ -31,17 +31,17 @@ Link: https://drive.google.com/file/d/1rXyoW1wYY54ALXUtHZjh0R3I49D9dXWx/view?usp
 Regularidad:
 |Req|Detalle|
 |:-|:-|
-|CRUD simple|1. CRUD Persona<br>2. CRUD Tag<br>3. CRUD Articulo|
-|CRUD dependiente|1. CRUD Tasacion {depende de} CRUD Tasador<br>2. CRUD Propuesta_Subasta {depende de} CRUD Gerente<br>3. CRUD Subasta {depende de} CRUD Propuesta_Subasta|
-|Listado<br>+<br>detalle| 1. Listado de articulo filtrado por tipo de estado, muestra nombre, descripcion y estado => detalle CRUD Artículo<br> 2. Listado de pedidos filtrado por rango de fecha, muestra id de artuculo, fecha de compra,total y nombre del cliente => detalle muestra datos completos del pedido y del cliente|
-|CUU/Epic|1. Cualquiera puede subastar<br>2. Carga de artículos|
+|CRUD simple|1. CRUD Usuario<br>2. CRUD Modelo<br>3. CRUD Categoria_Articulo<br>4. CRUD Autor<br>5. CRUD Categoria_Subasta|
+|CRUD dependiente|1. CRUD Subasta {depende de} CRUD Gerente<br>2. CRUD Subasta {depende de} CRUD Categoria_Subasta<br>3. CRUD Articulo {depende de} CRUD Modelo<br>4. CRUD Articulo {depende de} CRUD Categoria_Articulo<br>5. CRUD Articulo {depende de} CRUD Autor|
+|Listado<br>+<br>detalle| 1. Listado de Articulo filtrado por modelo, categoria, autor, muestra nombre, descripcion => detalle muestra datos completos del articulo<br> 2. Listado de Subasta filtrado por categoria, fecha, nombre, disponibilidad => detalle muestra datos completos de la subasta|
+|CUU/Epic|1. Registrarse a una subasta<br>2. Participar de una subasta|
 
 
 Adicionales para Aprobación
 |Req|Detalle|
 |:-|:-|
-|CRUD |1. CRUD Persona<br>2. CRUD Artículo<br>3. CRUD Propuesta_Subasta<br>4. CRUD Subasta<br>5. CRUD Tasación<br>6. CRUD Supervisor<br>7. CRUD Gerente|
-|CUU/Epic|1. Gerente crea propuesta de subasta<br>2. Carga de artículos<br>3. Ingresar tasacion<br>4. Publicar Subasta<br>5. Ingresar a Subasta|
+|CRUD |1. CRUD Usuario<br>2. CRUD Subasta<br>3. CRUD Categoria_Subasta<br>4. CRUD Articulo<br>5. CRUD Modelo<br>6. CRUD Categoria_Articulo<br>7. CRUD Autor|
+|CUU/Epic|1. Registrarse a una subasta<br>2. Participar de una subasta<br>3. Definir los detalles para aceptar y recibir el articulo<br>4. Visualizar subastas en las que se registro y administrarlas<br>|
 
 
 ### Alcance Adicional Voluntario
