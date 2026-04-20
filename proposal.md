@@ -5,6 +5,7 @@
 * 53136 - Caballero, Luciano
 * 53269 - Leone, Lucca
 * 52925 - Vella, Luca
+* 53137 - Diogo Utrera
 
 ### Repositorios
 * [frontend app](http://hyperlinkToGihubOrGitlab)
