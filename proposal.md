@@ -35,14 +35,14 @@ Regularidad:
 |CRUD simple|1. CRUD Usuario<br>2. CRUD Modelo<br>3. CRUD Categoria_Articulo<br>4. CRUD Autor<br>5. CRUD Categoria_Subasta|
 |CRUD dependiente|1. CRUD Subasta {depende de} CRUD Gerente<br>2. CRUD Subasta {depende de} CRUD Categoria_Subasta<br>3. CRUD Articulo {depende de} CRUD Modelo<br>4. CRUD Articulo {depende de} CRUD Categoria_Articulo<br>5. CRUD Articulo {depende de} CRUD Autor|
 |Listado<br>+<br>detalle| 1. Listado de Articulo filtrado por modelo, categoria, autor, muestra nombre, descripcion => detalle muestra datos completos del articulo<br> 2. Listado de Subasta filtrado por categoria, fecha, nombre, disponibilidad => detalle muestra datos completos de la subasta|
-|CUU/Epic|1. Registrarse a una subasta<br>2. Participar de una subasta|
+|CUU/Epic|1. Participar de una subasta<br>2. Visualizar subastas en las que se ofertó y administrarlas|
 
 
 Adicionales para Aprobación
 |Req|Detalle|
 |:-|:-|
 |CRUD |1. CRUD Usuario<br>2. CRUD Subasta<br>3. CRUD Categoria_Subasta<br>4. CRUD Articulo<br>5. CRUD Modelo<br>6. CRUD Categoria_Articulo<br>7. CRUD Autor|
-|CUU/Epic|1. Registrarse a una subasta<br>2. Participar de una subasta<br>3. Definir los detalles para aceptar y recibir el articulo<br>4. Visualizar subastas en las que se registro y administrarlas<br>|
+|CUU/Epic|1. Participar de una subasta<br>2. Definir los detalles para aceptar y recibir el articulo<br>3. Visualizar subastas en las que se registro y administrarlas<br>4. Visualizar subastas en las que se registro y administrarlas<br>|
 
 
 ### Alcance Adicional Voluntario
